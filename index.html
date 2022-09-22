@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+
+<body>
+    <!-- Header nav bar -->
+    <!-- Desktop version -->
+    <header class="header container">
+        <img src="assets/images/logo.svg" alt="Logo Shortly">
+        <div class="links-container">
+            <ul class="nav-links">
+                <li class="link">
+                    <a href="#">Features</a>
+                </li>
+                <li class="link">
+                    <a href="#">Pricing</a>
+                </li>
+                <li class="link">
+                    <a href="#">Resources</a>
+                </li>
+            </ul>
+
+            <div class="registration">
+                <a href="#" class="login link">Login</a>
+                <a href="#" class="button small">Sign Up</a>
+            </div>
+        </div>
+        <div class="mobile-menu-icon">
+            <div class="mobile-menu-bar">
+                <img src="assets/images/Hamburger_icon.svg.png" alt="Hamburger icon">
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile version -->
+    <section class="intro-section container">
+        <div class="mobile-navbar-container">
+            <div class="mobile-navbar">
+                <ul class="mobile-nav-links">
+                    <li class="mobile-link">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="mobile-link">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="mobile-link">
+                        <a href="#">Resources</a>
+                    </li>
+                    <hr>
+                    <li class="mobile-link">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="mobile-link button small">
+                        <a href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="intro-container">
+            <div class="intro-text">
+                <h1>More than just<br>shorter links</h1>
+                <p>Build your brand's recognition and get detailed insights
+                    on how your links are performing.</p>
+
+                <a class="button big" onclick="moveToShortApp()">Get Started</a>
+
+            </div>
+            <div class="intro-img">
+                <img class="illustration" src="assets/images/illustration-working.svg" alt="illustration Banner Img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Short Function -->
+    <section id="shortening" class="shortening-section">
+        <div class="shorten-it-div">
+            <div class="shorten-input-div">
+                <input class="shortening-input" type="text" placeholder="Shorten a link here...">
+
+                <button class="shorten-btn">Shorten It!</button>
+            </div>
+            <p class="error">Please enter a valid URL.</p>
+        </div>
+    </section>
+
+    <!-- Detail -->
+    <section class="details-section">
+
+        <ul class="shorten-list">
+
+        </ul>
+
+        <div class="advanced-stats container">
+            <h1 class="details-title">Advanced Statistics</h1>
+            <p class="details-subtitle"> Track how your links are performing across the web with</p>
+            <p class="details-subtitle"> our advanced statistics dashboard.</p>
+
+            <div class="features">
+                <div class="features-box brand-box">
+                    <div class="features-icon">
+                        <img src="assets/images/icon-brand-recognition.svg" alt="features">
+                    </div>
+                    <h3>Brand Recognition</h3>
+
+                    <p>Boost your brand recognition with each click. Generic links don't
+                        mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="separate-bars">
+                    <span></span>
+                </div>
+                <div class="features-box records-box">
+                    <div class="features-icon">
+                        <img src="assets/images/icon-detailed-records.svg" alt="details">
+                    </div>
+                    <h3>Detailed Records</h3>
+                    <p>Gain insights into who is clicking your links. Knowing when and where
+                        people engage with your content helps inform better decisions.</p>
+
+                </div>
+                <div class="separate-bars">
+                    <span></span>
+                </div>
+                <div class="features-box customize-box">
+                    <div  class="features-icon">
+                        <img src="assets/images/icon-fully-customizable.svg" alt="customize">
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p> Improve brand awareness and content discoverability through customizable
+                        links, supercharging audience engagement.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boost to short function -->
+    <section class="boost-section">
+        <div class="boost-div">
+            <h1 class="boost-title">Boost your links today</h1>
+            <a class="button big" onclick="moveToShortApp()">Get Started</a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="logo-div">
+                <p class="footer-logo">Shortly</p>
+            </div>
+            <div class="footer-links-container">
+                <div class="links-div">
+                    <h3>Features</h3>
+                    <ul class="links-list">
+                        <li>Link Shortening</li>
+                        <li>Branded Links</li>
+                        <li>Analytics</li>
+                    </ul>
+
+                </div>
+                <div class="links-div">
+                    <h3>Resources</h3>
+                    <ul class="links-list">
+                        <li>Blog</li>
+                        <li>Developers</li>
+                        <li>Support</li>
+                    </ul>
+
+                </div>
+                <div class="links-div">
+                    <h3>Company</h3>
+                    <ul class="links-list">
+                        <li>About</li>
+                        <li>Our Team</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media-div">
+                <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                <img src="assets/images/icon-twitter.svg" alt="Twitter">
+                <img src="assets/images/icon-pinterest.svg" alt="Pinterest">
+                <img src="assets/images/icon-instagram.svg" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Attribution -->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Duc</a>.
+    </div>
+
+</body>
+<script src="assets/js/main.js"></script>
+</html>
